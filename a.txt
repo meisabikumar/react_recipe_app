@@ -2,3 +2,5 @@ React Crash Course - Build A Full Recipe App Tutorial
 channel : Dev Ed
 
 video link: https://youtu.be/xc4uOzlndAk
+
+api_link : https://spoonacular.com/food-api
