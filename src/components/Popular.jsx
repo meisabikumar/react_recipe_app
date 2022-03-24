@@ -30,7 +30,7 @@ function Popular() {
     <Wrapper>
       <h3>Popular Picks</h3>
 
-      <Splide options={{ perPage: 3, arrows: false, pagination: false, drag: "free", gap: "5rem" }}>
+      <Splide options={{ perPage: 4, arrows: false, pagination: false, drag: "free", gap: "5rem" }}>
         {popular.map((recipe) => {
           return (
             <SplideSlide key={recipe.id}>
@@ -52,7 +52,7 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-  min-height: 25rem;
+  min-height: 20rem;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
@@ -85,9 +85,10 @@ const Card = styled.div`
 `;
 
 const Gradient = styled.div`
+  position: absolute;
   z-index: 3;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 `;
 export default Popular;
